@@ -1,25 +1,25 @@
-> -  原文地址：[Scientific Computing in Golang with the Gonum Package](https://www.freecodecamp.org/news/scientific-computing-in-golang-using-gonum/)
-> -  原文作者：[UkejeChukwuemeriwoGoodness](https://www.freecodecamp.org/news/author/goodnessuc/)
-> -  译者：
-> -  校对者：
+> - 原文地址：[Scientific Computing in Golang with the Gonum Package](https://www.freecodecamp.org/news/scientific-computing-in-golang-using-gonum/)
+> - 原文作者：[UkejeChukwuemeriwoGoodness](https://www.freecodecamp.org/news/author/goodnessuc/)
+> - 译者：[luojiyin](https://github.com/luojiyin1987)
+> - 校对者：
 
 ![Scientific Computing in Golang with the Gonum Package](https://www.freecodecamp.org/news/content/images/size/w2000/2022/04/freecode_ccexpress.jpeg)
 
 In this article, I'll introduce you to Gonum, a package you can use to perform scientific computations in the Go programming language.
 
-### Here's what we'll cover in this intermediate tutorial:
+### Here's what we'll cover in this intermediate tutorial
 
--   What is Gonum?
--   Why use Gonum
--   How to install and set up Gonum
--   How to perform statistical operations using Gonum
--   How to perform matrix operations using Gonum
--   Other scientific computations supported by Gonum.
+- What is Gonum?
+- Why use Gonum
+- How to install and set up Gonum
+- How to perform statistical operations using Gonum
+- How to perform matrix operations using Gonum
+- Other scientific computations supported by Gonum.
 
-### Prerequisites:
+### Prerequisites
 
--   Knowledge of functional programming in Golang.
--   A Golang IDE with Go installed (I use Goland and Go 1.17.6, but you can use any other)
+- Knowledge of functional programming in Golang.
+- A Golang IDE with Go installed (I use Goland and Go 1.17.6, but you can use any other)
 
 ## What is Gonum?
 
@@ -35,10 +35,10 @@ In this article, we'll go over various functions and use-cases of Gonum.
 
 ## Why Use Gonum?
 
--   The speed and concurrency Golang offers.
--   Golang programs are easier to maintain.
--   Gonum contains more mathematical operations than the Go standard library.
--   Gonum is optimized for scientific calculations across various fields.
+- The speed and concurrency Golang offers.
+- Golang programs are easier to maintain.
+- Gonum contains more mathematical operations than the Go standard library.
+- Gonum is optimized for scientific calculations across various fields.
 
 ## How to Get Started With Gonum
 
@@ -64,7 +64,7 @@ import “gonum.org/v1/gonum/stat”
 
 ![carbon--1-](https://www.freecodecamp.org/news/content/images/2022/03/carbon--1-.png)
 
--   **Mean**: `stat.Mean` returns the mean value of a slice of the `float64` type. It takes in a slice and a [weight](https://en.wikipedia.org/wiki/Weighted_arithmetic_mean) which could be nil or a corresponding slice for which the slice gets weighed.
+- **Mean**: `stat.Mean` returns the mean value of a slice of the `float64` type. It takes in a slice and a [weight](https://en.wikipedia.org/wiki/Weighted_arithmetic_mean) which could be nil or a corresponding slice for which the slice gets weighed.
 
 ```go
 func mean() {
@@ -76,7 +76,7 @@ func mean() {
 
 **Output: 3.5**
 
--   **Median**: `stat.Quantile`, there is no explicit function for the median in gonums/stat. But we can use `stat.Quantile` by passing in a sorted slice by importing the `sort` module.
+- **Median**: `stat.Quantile`, there is no explicit function for the median in gonums/stat. But we can use `stat.Quantile` by passing in a sorted slice by importing the `sort` module.
 
 `stat.Quantile` takes a position, the slice, a [cummulant kind](https://github.com/gonum/gonum/blob/v0.9.3/stat/stat.go#L1039) and weight. The position argument `p` is a float ranging from 0 to 1, and the cumulant kind is `stat.Empirical` or `stat.LinInterp`.
 
@@ -85,21 +85,21 @@ In this case, we use `stat.Empirical`, which returns the value at the specified 
 ````
 ```go
 import (
-	"gonum.org/v1/gonum/stat"
-	"sort"
+ "gonum.org/v1/gonum/stat"
+ "sort"
 )
 
 func median() {
-	values := []float64{10, 20, 25, 30, 45, 70, 30}
-	sort.Float64s(values) //sorts the float
-	fmt.Println(stat.Quantile(0.5, stat.Empirical, values, nil))
+ values := []float64{10, 20, 25, 30, 45, 70, 30}
+ sort.Float64s(values) //sorts the float
+ fmt.Println(stat.Quantile(0.5, stat.Empirical, values, nil))
 }
 ```
 ````
 
 **Output: 30**
 
--   **Mode**: `stat.Mode`. Just like `stat.Mean`, it takes in a slice of values and a weight slice, and returns the most occurring element alongside the number of occurrences of the element.
+- **Mode**: `stat.Mode`. Just like `stat.Mean`, it takes in a slice of values and a weight slice, and returns the most occurring element alongside the number of occurrences of the element.
 
 ```go
 func mode() {
@@ -118,7 +118,7 @@ Gonum supports matrix operations in the [`mat` package](https://pkg.go.dev/gonum
 import “gonum.org/v1/gonum/mat”
 ```
 
-### How to Create a Matrix:
+### How to Create a Matrix
 
 `mat.NewDense` is the method for creating a matrix. It takes in the dimensions of the matrix and the data to be passed in, which could be nil (a matrix with all entities equal to zero).
 
@@ -147,8 +147,8 @@ To output a two-dimensional table, we use `mat.Formatted` which takes in the mat
 
 ```go
 func format(matrix mat.Matrix) {
-	formatted := mat.Formatted(matrix, mat.Prefix(""), mat.Squeeze())
-	fmt.Println(formatted)
+ formatted := mat.Formatted(matrix, mat.Prefix(""), mat.Squeeze())
+ fmt.Println(formatted)
 }
 ```
 
@@ -168,7 +168,7 @@ To input a value into a position in the matrix, we use `.Set` on the matrix obje
 
 ```go
 func input(){
-	matrix.Set(1, 2, 3.0)
+ matrix.Set(1, 2, 3.0)
 }
 ```
 
@@ -188,8 +188,8 @@ Here, we retrieve the element we set in the above example:
 
 ```go
 func retriever(){
-	getElement := matrix.At(1, 2)
-	fmt.Println(getElement)
+ getElement := matrix.At(1, 2)
+ fmt.Println(getElement)
 }
 ```
 
@@ -203,7 +203,7 @@ The `.T` method on the matrix object transposes the matrix.
 
 ```go
 func transposer(){
-	format(null.T())
+ format(null.T())
 }
 ```
 
@@ -223,8 +223,8 @@ You can evaluate the determinant of a matrix using the method `mat.Det` which ta
 
 ```go
 func determinant(){
-	determinant := mat.Det(matrix)
-	fmt.Println(determinant)
+ determinant := mat.Det(matrix)
+ fmt.Println(determinant)
 }
 ```
 
@@ -254,13 +254,13 @@ matrix.SetRow(1, values)
 
 Gonum has more packages for scientific computing:
 
--   [blas](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/blas) → provides interfaces for the BLAS (**Basic Linear Algebra Subprograms)** linear algebra standard
--   [diff](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/diff/fd) → Functions for differential calculus
--   [graph](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/graph) → interfaces for graphs
--   [integrate](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/integrate) → Functions for integral calculus
--   [lapack](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/lapack) → provides interfaces for the LAPACK (Linear Algebra Package) linear algebra standard
--   [mathext](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/mathext) → Special mathematics functions that are not included in the Go standard library
--   [unit](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/unit) → Types and constants for easy use of SI Units
+- [blas](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/blas) → provides interfaces for the BLAS (**Basic Linear Algebra Subprograms)** linear algebra standard
+- [diff](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/diff/fd) → Functions for differential calculus
+- [graph](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/graph) → interfaces for graphs
+- [integrate](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/integrate) → Functions for integral calculus
+- [lapack](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/lapack) → provides interfaces for the LAPACK (Linear Algebra Package) linear algebra standard
+- [mathext](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/mathext) → Special mathematics functions that are not included in the Go standard library
+- [unit](https://pkg.go.dev/gonum.org/v1/gonum@v0.11.0/unit) → Types and constants for easy use of SI Units
 
 ## Wrapping Up
 
