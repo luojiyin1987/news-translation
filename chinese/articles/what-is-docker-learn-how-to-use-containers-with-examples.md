@@ -44,11 +44,11 @@ docker run --rm -v "$PWD/data":/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWOR
 
 该命令使用了运行Docker容器的高级功能:
 
-- `-v "$PWD/data"` 映射了你的本地目录到容器的 `./data`目录 , 这使你能够启动Docker容器而不丢失你的数据，
+- `-v "$PWD/data"` 映射了你的本地的 `data`目录到容器的 `/var/lib/mysql`目录 , 这使你能够启动Docker容器而不丢失你的数据，
 - `-p 3306:3306` 映射容器的 `3306` 端口到我们的机器的 `3306` 端口上，以便其他应用程序可以使用它,
 - `-e MYSQL_DATABASE=my-database` 设置一个环境变量，自动创建一个名为`my-database`的新数据库,
 - `-e MYSQL_ROOT_PASSWORD=admin-password` 设置一个环境变量来设置管理密码,
-- `--rm` 停止时移除容器。
+- `--rm` 容器停止运行时移除容器。
 
 这些环境变量和更多的环境变量都记录在 [Docker镜像的页面](https://hub.docker.com/_/mysql/?tab=description)。
 
