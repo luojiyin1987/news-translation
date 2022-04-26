@@ -222,7 +222,7 @@ Photo by [Luis Villasmil](https://unsplash.com/@villxsmil?utm_source=ghost&utm_m
 
 作为一个专家并不是对所有问题都有答案，而是要知道如何找到答案。
 
-## Remove Distractions
+## 避免分心
 
 ![](https://images.unsplash.com/photo-1614454542040-a0125d70ba2b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGRpc3RyYWN0fGVufDB8fHx8MTYyODQ4MjM2Mg&ixlib=rb-1.2.1&q=80&w=2000)
 
