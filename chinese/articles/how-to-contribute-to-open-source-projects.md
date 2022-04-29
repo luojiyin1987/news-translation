@@ -43,7 +43,7 @@
 
 让我们关注以下提示:
 
-- **不要犯冒名顶替综合症**。无论你在技术职业中处于什么位置，冒名顶替综合症可能会不时地出现。即使有 7-8 年的经验，我有时也会流汗，认为自己是否足够好。
+- **不要被冒名顶替综合症打败**。无论你在技术职业中处于什么位置，冒名顶替综合症可能会不时地出现。即使有 7-8 年的经验，我有时也会流汗，认为自己是否足够好。
 
 所以，不要担心。开始写作的最好方法是在你建立一个项目时尝试写作。解释给自己听，就像你在和朋友说话一样，帮助他们理解它。这样一来，任何读到你的教程的人都会知道如何建立这个项目。
 
@@ -67,7 +67,7 @@
 
 总而言之，我的视野相当狭窄。
 
-但由于我是一名科技作家，我是一个名为 Write the Docs 的全球科技作家社区的活跃成员。 当我发现 Google Season of Docs 时，我正在浏览他们的 Slack 频道。
+但由于我是一名科技作家，我是一个名为 Write the Docs 的全球科技作家社区的活跃成员。 当我正在浏览他们的 Slack 频道,我发现 Google Season of Docs 时，。
 
 我浏览了参与组织的名单，发现了一个有趣的组织。然后，我通过他们的 Slack 频道联系了他们，并提出担任志愿者。
 
@@ -90,17 +90,17 @@
 
 在寻找可供贡献的仓库之前，先对 Git 命令和 [GitHub 平台](https://lab.github.com/) 进行实践了解。:） 获得对以下内容的基本了解:
 
-- 如何分叉（fork） repo
+- 如何复刻（fork） repo
 - 如何进行提交(commit)
 - 如何合并(merge) 提交的内容
-- 如何提出拉动请求(pull request 简称 pr)
+- 如何提出拉取请求(pull request 简称 pr)
 
 在许多其他的 Git/GitHub 概念中，这些是最重要的一些。
 
 如果你想了解更多，这里有一些有用的资源:
 
 - [Git 和 GitHub 教程 - 面向初学者的版本控制](https://www.freecodecamp.org/news/git-and-github-for-beginners/)
-- [Git 与 GitHub 速成班](https://www.freecodecamp.org/news/git-and-github-crash-course/)
+- [Git 与 GitHub 快速指南](https://www.freecodecamp.org/news/git-and-github-crash-course/)
 
 ### 浏览一些项目
 
@@ -112,7 +112,7 @@
 
 一旦你找到了一个项目，就去找那个 repo 的初学者友好问题。为此，输入 github.com/[所有者]/[仓库]/contribute。选择一个问题来开始贡献。你可以在 "适合初学者的第一个问题( good first issue for beginners)"标签下找到这些问题。
 
-如果你在 GitHub 上一直很活跃，你的探索页面 (explore page) 会显示一些基于你过去的贡献、星级或分叉的精心推荐。
+如果你在 GitHub 上一直很活跃，你的探索页面 (explore page) 会显示一些基于你过去的贡献、收藏或分叉的精心推荐。
 
 ### 参与开源计划
 
@@ -161,7 +161,7 @@
 
 #### 本地化的帮助
 
-帮助建立你所熟悉的语言的项目。假设你是一个以西班牙语为母语的人。在你的社区寻找一些项目。把主要的项目从英语翻译成西班牙语，这样项目就能被全世界更多的人使用。
+帮忙把项目翻译成你熟悉的语言。假设你是一个以西班牙语为母语的人。在你的社区寻找一些项目。把主要的项目从英语翻译成西班牙语，这样项目就能被全世界更多的人使用。
 
 要了解一些其他的贡献方式，请参考 freeCodeCamp 的 [这个仓库](https://github.com/freeCodeCamp/how-to-contribute-to-open-source)。
 
