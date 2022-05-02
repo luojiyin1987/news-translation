@@ -7,7 +7,7 @@
 
 Google Colaboratory（`Colab`）是一个笔记本（像 Jupyter 笔记本），你可以在 Google Drive 中运行 Python 代码。
 
-你可以写文本，写代码，运行该代码，并看到输出——所有这些都在同一个笔记本中排成一行。
+你可以写文本，写代码，运行该代码，并看到输出——所有这些都可以在同一个笔记本中实现。
 
 ## Google Colab 的优势
 
@@ -23,7 +23,7 @@ Google Colaboratory（`Colab`）是一个笔记本（像 Jupyter 笔记本），
 
 ![us0e4vwVAXFLV1Zv_07RINIVP3uMish_sPWjumo8Y8LYBjbBqa5fq7Ioxw7KUmbIGGN18mbUcu16EhLpmWreOsqpHqnwyVt6bFvTKTg0B-FdclBXIumNAGSHm8MRQmuYKCMz7Q9_](https://lh4.googleusercontent.com/us0e4vwVAXFLV1Zv_07RINIVP3uMish_sPWjumo8Y8LYBjbBqa5fq7Ioxw7KUmbIGGN18mbUcu16EhLpmWreOsqpHqnwyVt6bFvTKTg0B-FdclBXIumNAGSHm8MRQmuYKCMz7Q9_)
 
-2. 点击 `more`, 点击 `connect more apps` 在该新菜单的底部。
+2. 点击 `more`, 并在该新菜单的底部点击 `connect more apps`。
 
 ![kWfy4KkQcuTYxHO0CGiUVsf2PTFRrKEYQzQM1BffRAaarwnIlg3a_zgtD71_NqSzqGnvqRqfTPUi793vgPr6dzNJ6WmhHn9oPePJSaK9h1RNqR5KvwHg2UVj9sYIMBTvizjWtJ_V](https://lh6.googleusercontent.com/kWfy4KkQcuTYxHO0CGiUVsf2PTFRrKEYQzQM1BffRAaarwnIlg3a_zgtD71_NqSzqGnvqRqfTPUi793vgPr6dzNJ6WmhHn9oPePJSaK9h1RNqR5KvwHg2UVj9sYIMBTvizjWtJ_V)
 
