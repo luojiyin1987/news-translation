@@ -3,25 +3,25 @@
 > - 译者：[luojiyin](https://github.com/luojiyin1987)
 > - 校对者：
 
-JavaScript is one of the most popular programming languages in the world.
+JavaScript 是世界上最流行的编程语言之一。
 
-I believe it's a great choice for your first programming language ever.
+我相信对于你的第一门编程语言来说，它是一个不错的选择。
 
-We mainly use JavaScript to create
+我们主要使用 JavaScript 来创建
 
-- websites
-- web applications
-- server\-side applications using Node.js
+- 网站
+- 网络应用程序
+- 使用 Node.js 的服务器端应用程序
 
-but JavaScript is not limited to these things, and it can also be used to
+但是，JavaScript 并不局限于这些，它也可以被用于
 
-- create mobile applications using tools like React Native
-- create programs for microcontrollers and the internet of things
-- create smartwatch applications
+- 使用 React Native 等工具创建移动应用程序
+- 为微控制器和物联网创建程序
+- 创建智能手表应用程序
 
-It can basically do anything. It's so popular that everything new that shows up is going to have some kind of JavaScript integration at some point.
+它基本上可以做任何事情。它是如此受欢迎，以至于所有新出现的东西在某种程度上都会有某种 JavaScript 的集成。
 
-JavaScript is a programming language that is:
+JavaScript 是一种编程语言:
 
 - **high level**: it provides abstractions that allow you to ignore the details of the machine where it's running on. It manages memory automatically with a garbage collector, so you can focus on the code instead of managing memory like other languages like C would need, and provides many constructs which allow you to deal with highly powerful variables and objects.
 - **dynamic**: opposed to static programming languages, a dynamic language executes at runtime many of the things that a static language does at compile time. This has pros and cons, and it gives us powerful features like dynamic typing, late binding, reflection, functional programming, object runtime alteration, closures and much more. Don't worry if those things are unknown to you \- you'll know all of them by the end of the course.
