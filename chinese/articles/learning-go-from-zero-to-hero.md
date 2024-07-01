@@ -79,7 +79,7 @@ func main(){
 # Hello World!
 ```
 
-还有一种更简单的方法来运行程序。`go run` 命令会编译源代码，并直接执行源码中的 main() 函数，不会在当前目录留下可执行文件。你可以简单地运行以下命令来执行该程序。
+还有一种更简单的方法来运行程序。`go run` 命令有助于抽象编译步骤（译者注：直接执行源码中的 main() 函数，不会在当前目录留下可执行文件）。你可以简单地运行以下命令来执行该程序。  
 
 ```shell
 go run main.go
@@ -120,8 +120,8 @@ var b, c int = 2, 3
 
 #### **Number, String, and Boolean (整型 字符串和布尔值)**
 
-支持的整型包括 int, int8, int16, int32, int64,  
-uint, uint8, uint16, uint32, uint64, uintptr(无符号整型，长度跟平台相关，它的长度可以用来保存一个指针地址) 等
+支持的整型包括 int、int8、int16、int32、int64  
+uint、uint8、uint16、uint32、uint64、uintptr(无符号整型，长度跟平台相关，它的长度可以用来保存一个指针地址) 等
 
 字符串类型存储一个字节序列。它用关键字 `string` 来表示和声明。
 
